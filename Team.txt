@@ -1,0 +1,6 @@
+Team Diamond
+ 
+Project E-learning System in java
+
+team members:
+Ahmad Sabir, Khalil Ahmad, Hamdullah, Farooq
