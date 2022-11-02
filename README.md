@@ -1,4 +1,2 @@
 # Programming-Project
-This is a small E-Learning project in java
-We mentioned all features of this project 
-in project requirements pdf file
+This is a IMRAS like web app that provide us the oppartunity to activate or deactivate our simcard data bundles.
