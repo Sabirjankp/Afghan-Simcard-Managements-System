@@ -1,64 +1,73 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
+  outline: none;
+
 }
 body {
-  background-color: gainsboro;
+  background-color: none;
 }
+
+.nav_bar {
+  color: white;
+  width: 100%;
+  height: 79px;
+  line-height: 80px;
+  background-color: #0082e6;
+  display: grid;
+  grid-template-columns: 1/6;
+
+}
+.nav_bar ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin:  0 5px;
+
+}
+h2{
+  color: white;
+}
+
+.logo{
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.nav_butt{
+    grid-column-start: 5;
+    grid-column-end: 6;  
+}
+.nav_bar ul li a{
+  background-color: #0082e6;
+  color: white;
+  font-size: 17px;
+  padding:  7px 13px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border: none;
+}
+.nav_bar ul li a:hover{
+  background-color: #1b527c ;
+}
+
+
+
+
+
+
 .main-div {
-  /* background-color: gainsboro; */
+ 
   max-width: 1140px;
   margin: 0px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border-radius: 10px; */
+
 }
-.nav_bar {
-  background-color: aqua;
-  height: 100%;
-  width: 100%;
-  padding: 20px 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-  font-family: sans-serif;
-}
-/* .contents {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-  font-family: sans-serif;
-} */
-.nav_row {
-  width: 100%;
-  padding-left: 15px;
-}
-.nav_butt {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  padding-right: 15px;
-}
-button {
-  width: 20%;
-  height: 40px;
-  font-size: large;
-  border: none;
-  margin-left: 10px;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 5px;
-  background-color: black;
-  color: white;
-}
+
 .networks {
   margin-top: 30px;
   margin-bottom: 40px;
@@ -100,7 +109,7 @@ a {
   font-family: sans-serif;
 }
 .first-header {
-  background-color: lightblue;
+  background-color: black;
   width: 100%;
   padding: 20px 0px;
   display: flex;
@@ -112,69 +121,9 @@ a {
 h3 {
   font-size: 23px;
   font-family: sans-serif;
+  color: white;
 }
-/* .first-header {
-  width: 100%;
-  background-color: rgb(26, 8, 128);
-  text-align: center;
-  padding: 16px;
-  border: none;
-  box-shadow: 1px 2px grey;
-}
-.first-header h3 {
-  color: #fff;
-  font-size: larger;
-  font-size: x-large;
-  font-family: sans-serif;
-}
-/* .container {
-  width: 100%;
-  height: 100%;
-  background-color: lightblue;
-  position: relative;
-} */
-
-/* .awcc-butten,
-.etisalat-butten,
-.mtn-butten,
-.salaam-butten {
-  float: left;
-  margin-right: 5%;
-}
-.roshan-butten {
-  float: right;
-  margin-left: 5%;
-}
-.awcc-butten {
-  position: absolute;
-  left: 32%;
-  top: 5%;
-}
-.etisalat-butten {
-  position: absolute;
-  left: 44%;
-  top: 5%;
-}
-.roshan-butten {
-  position: absolute;
-  right: 32%;
-  top: 5%;
-}
-.mtn-butten {
-  position: absolute;
-  left: 32%;
-  top: 150%;
-}
-.salaam-butten {
-  position: absolute;
-  left: 44%;
-  top: 150%;
-}
-img {
-  width: 150px;
-  height: 160px;
-} */
 
 button:hover {
-  background-color: lightgray;
+  background-color: #1b527c ;
 }
