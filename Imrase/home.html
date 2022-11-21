@@ -4,75 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Imrase/CSS/style_home.css" />
-    <title>Afghan Simcard Management System</title>
+    <link rel="stylesheet" href="../Imrase/CSS/style.css" />
+    <link rel="stylesheet" href="../Imrase/CSS/style_home.css" />
+    <script src="JS/all.min.js"></script>
+
+    <title>Afghan Sim card Management System</title>
   </head>
   <body>
-    <header class="first-header">
-      <h3>Afghan Simcard Management System</h3>
+    <header id="wrpper">
+      <span id="logo" >Afghan Sim card Management System</span>
     </header>
-    <nav class="nav_bar">
-      <span class="logo">
-        <h2>All Networks</h2>
-      </span>
-      <span class="nav_butt">
-        <ul>
-          <li><a href="/Imrase/home.html">Home</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Help</a></li>
-        </ul>
-      </span>
+    <nav class="main-nav">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn"> 
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="title">All Networks</label>
+      <ul class="nav-ul">
+        <li><a class="n-btn" href="">Home</a></li>
+        <li><a class="n-btn" href="">Contact</a></li>
+        <li><a class="n-btn" href="">Help</a></li>
+      </ul>
     </nav>
-    <section class="cards">
-      <div class="card" id="awcc">
-        <a class="link" href="/Imrase/awcc.html">
-          <img class="image" src="images/Awcc.png" alt="awcc"
-        /></a>
-        <div class="card-text">
-          <h3>Afghan wireless</h3>
-        </div>
-      </div>
-      <div class="card" id="etisalat">
-        <a class="link" href="/Imrase/etisalat.html"
-          ><img class="image" src="images/etisalat.png" alt="awcc"
-        /></a>
-        <div class="card-text">
-          <h3>Etisalat</h3>
-        </div>
-      </div>
-      <div class="card" id="roshan">
-        <a class="link" href="/Imrase/roshan.html"
-          ><img class="image" src="images/Roshan.png" alt="awcc"
-        /></a>
-        <div class="card-text">
-          <h3>Roshan</h3>
-        </div>
-      </div>
-      <div class="card" id="mtn">
-        <a class="link" href="/Imrase/mtn.html"
-          ><img class="image" src="images/MTN.png" alt="awcc"
-        /></a>
-        <div class="card-text">
+    <main>
+      <ul class="cards">
+        <li class="card">
+          <a href="../Imrase/AWCC/awcc.html"><img src="../Imrase/Images/Awcc.png" alt="AWCC img"></a>
+          <h3>Afghan Wireless</h3>
+        </li>
+        <li class="card">
+          <a href="../Imrase/MTN/mtn.html"><img src="../Imrase/Images/MTN.png" alt="MTN img"></a>    
           <h3>MTN</h3>
-        </div>
-      </div>
-      <div class="card" id="salaam">
-        <a class="link" href="/Imrase/salaam.html"
-          ><img class="image" src="images/Salam.png" alt="awcc"
-        /></a>
-        <div class="card-text">
-          <h3>Salaam</h3>
-        </div>
-      </div>
-      <div class="card" id="profile">
-        <a class="link" href="/Imrase/profile.html"
-          ><img class="image" src="images/Sabir.jpg" alt="awcc"
-        /></a>
-        <div class="card-text">
+        </li>
+        <li class="card">
+          <a href="../Imrase/Etisalat/etisalat.html"><img src="../Imrase/Images/etisalat.png" alt="etisala img"></a>    
+          <h3>Etisalat</h3>
+        </li>
+        <li class="card">
+          <a href="../Imrase/Roshan/roshan.html"><img src="../Imrase/Images/Roshan.png" alt="roshan img"></a>    
+          <h3>Afghan Wireless</h3>
+        </li>
+        <li class="card">
+          <a href="../Imrase/Salaam/salaam.html"><img src="../Imrase/Images/Salam.png" alt="salaam img"></a>    
+          <h3>Afghan Wireless</h3>
+        </li>
+        <li class="card">
+          <img src="../Imrase/Images/Sabir.jpg" alt="profile img">    
           <h3>Profile</h3>
-        </div>
-      </div>
-    </section>
+        </li>
+      </ul>
+    </main>
     <footer>
       <div class="container">
         <div class="content-1">
@@ -106,7 +87,7 @@
           </ul>
         </div>
       </div>
-      <p>&copy Copy Rightes Reserved!</p>
+      <p>&copy Copy right just with Diamond team members, no one can copy it!</p>
     </footer>
   </body>
 </html>
