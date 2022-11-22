@@ -4,51 +4,98 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Imrase/CSS/networks_style.css" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/networks_style.css" />
+    <script src="../JS/all.min.js"></script>
     <title>Afghan wireless</title>
   </head>
   <body>
+    <header id="wrpper">
+      <span id="logo" >Afghan Sim card Management System</span>
+    </header>
+    <nav class="main-nav">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn"> 
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="title">Afghan Wireless</label>
+      <ul class="nav-ul">
+        <li><a class="n-btn" href="../home.html">Home</a></li>
+        <li><a class="n-btn" href="">Help</a></li>
+      </ul>
+    </nav>
     <main>
-      <div class="main-div">
-        <header class="first-header">
-          <h3>Afghan wireless</h3>
-        </header>
-        <nav class="nav_bar">
-          <div class="nav_row">
-            <h2>AWCC bundles</h2>
-          </div>
-          <div class="nav_butt">
-            <button id="home" onclick="location.href='Home.html'">Home</button>
-          </div>
-        </nav>
-        <section class="container">
-          <div class="networks">
-            <div class="first-row row">
-              <div class="Data item">
-                <img
-                  src="Images/360_F_463635935_IweuYhCqZRtHp3SLguQL8svOVroVXvvZ.jpg"
-                  alt="Data bundles"
-                />
-                <a href="">Data Bundles</a>
-              </div>
-              <div class="SMS item">
-                <img src="Images/download.png" alt="SMS" />
-                <a href="">SMS Bundles</a>
-              </div>
-            </div>
-            <div class="second-row row">
-              <div class="call item">
-                <img src="Images/sms-9.png" alt="call" />
-                <a href="">Call Bundles</a>
-              </div>
-              <div class="services item">
-                <img src="Images/Logo_service-593x400.png" alt="services" />
-                <a href="">Services</a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+      <ul class="cards">
+        <li class="card">
+          <a href="../AWCC/DATA Bundles/daily.html">
+            <img src="../Images/wireless.png" alt="wireless img">
+          </a>
+          <h3>Data Bundles</h3>
+        </li>
+        <li class="card">
+          <a href="../AWCC/Call Bundles/daily.html">
+            <img src="../Images/Call.jpg" alt="Call img">
+          </a>
+          <h3>Call Bundles</h3>
+        </li>
+        <li class="card">
+          <a href="../AWCC/SMS Bundles/daily.html">
+            <img src="../Images/Sms.png" alt="Sms img">
+          </a>
+          <h3>SMS Bundles</h3>
+        </li>
+        <li class="card">
+          <a href="../AWCC/International Bundles/">
+            <img src="../Images/Web.png" alt="web img">
+          </a>
+          <h3>International Bundles</h3>
+        </li>
+        <li class="card">
+          <a href="../AWCC/Sim Setting/index.html">
+            <img src="../Images/Setting.png" alt="Setting img">
+          </a>
+          <h3>Services</h3>
+        </li>
+
+
+      </ul>
+
     </main>
+    <footer>
+      <div class="container">
+        <div class="content-1">
+          <h2>Our group members</h2>
+          <ul>
+            <li><a href="#">Khalil Ahmad</a></li>
+            <li><a href="#">Ahmad Sabir</a></li>
+            <li><a href="#">Farooq</a></li>
+            <li><a href="#">Hamdullah</a></li>
+            <li><a href="#">Abdul Matten</a></li>
+          </ul>
+        </div>
+        <div class="content-2">
+          <h2>All Networks</h2>
+          <ul>
+            <li><a href="#">Afghan Wireless</a></li>
+            <li><a href="#">Etisalat</a></li>
+            <li><a href="#">Roshan</a></li>
+            <li><a href="#">MTN</a></li>
+            <li><a href="#">Salaam</a></li>
+          </ul>
+        </div>
+        <div class="content-3">
+          <h2>Services</h2>
+          <ul>
+            <li><a href="#">Data Bundles</a></li>
+            <li><a href="#">Message Bundles</a></li>
+            <li><a href="#">Call Bundles</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">International Bundles</a></li>
+          </ul>
+        </div>
+      </div>
+      <p>&copy Copy right just with Diamond team members, no one can copy it!</p>
+    </footer>
+
   </body>
 </html>
