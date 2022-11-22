@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</link>
+
+<body onload="wellcome()" >
+<div class="container">
+<header>
+    <h2>Conecet us</h2>
+    <section>
+        <div class="media-links">
+            <ul id="media-links">
+                <li ><a id="fac" href="#"><i class='fab fa-facebook-f'></i></a></li>
+                <li ><a id="twi"href="#"><i class='fab fa-twitter'></i></a></li>
+                <li ><a id="ins"href="#"><i class='fab fa-instagram'></i></a></li>
+                <li ><a id="lin"href="#"><i class='fab fa-linkedin-in'></i></a></li>
+                <li ><a id="plus"href="#">+</a></li>
+                <li ><a id="eml"href="#"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </section>
+</header>
+
+<div class="row">
+    <div class="btns">
+        <button onclick="openModal()">LOGIN&nbsp;<i class="fa-solid fa-user-plus"></i></button>
+        <button onclick="openSgin()">SIGN IN</button>
+    </div>
+    <div class="contact-inf">
+            <h1>Let's chat<br>Tell me about yours</h1>
+            <p>Let's Create somethings togather</p>
+        <div class="mail">
+            <h4>Mail me at</h4>
+            <h6><i class="fa-solid fa-envelope"></i> &nbsp;&nbsp;farooqzaheer2000@gmail.com</h6>
+        </div>
+    </div>
+        <div class="box" id="message-inf">
+        <form name="form1">
+            <div class="inputBox">
+                <input type="text" name="" required="">
+                <label>Username</label>
+            </div>
+            <div class="inputBox">
+                <input type="email" name="text1" required="">
+                <label>Email</label>
+            </div>
+            <div class="textBox">
+                <label>message</label>
+                <textarea rows="3"></textarea>
+            </div>
+            <input type="submit" name="" value="Send Message"/> 
+        </form>
+    </div> 
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="column">
+        <div class="box">
+            <form name="form1"  onreset="return ask_rest()" onsubmit="name_vlidate(),email_validate(),phone_validate()" >
+                <div class="inputBox">
+                    <input type="text" name="text1" id="fullname" required="">
+                    <label>FullName</label>
+                </div>
+                <div class="inputBox">
+                    <input type="text name="text1" id="email"  required="">
+                    <label>Email</label>
+                </div>
+                <div class="inputBox">
+                    <input type="password" name="" required="">
+                    <label>Password</label>
+                </div>
+                <div class="inputBox">
+                    <input type="tel" id="phone" required="">
+                    <label>Phone</label>
+                </div>
+                <div class="gender">
+                    <label>gender</label><br>
+                    <input type="radio" name="gender" value="male" checked> Male<br>
+                    <input type="radio" name="gender" value="female"> Female<br>
+                    <input type="radio" name="gender" value="other"> Other<br>
+                </div>
+                <input type="submit" value="submit"/> 
+                <input type="submit" value="rest" onreset="ask_rest()"/>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="sgin" class="modal">
+    <span class="close cursor" onclick="closeSgin()">&times;</span>
+      <div class="column">
+          <div class="box">
+              <form name="form1" onsubmit="email_validate()">
+                  <div class="inputBox">
+                      <input type="text" name="text1" id="email" required="">
+                      <label>Email</label>
+                  </div>
+                  <div class="inputBox">
+                      <input type="password" name="" required="">
+                      <label>Password</label>
+                  </div>
+                  <input type="submit" name="" value="submit"/> 
+              </form>
+          </div>
+      </div>
+  </div>
+
+<footer>
+    
+    <ul>
+        <h3>Conect us</h3>
+        <li ><a href="#"><i class='fab fa-facebook-f'></i>&nbsp;&nbsp;Aghan warless</a></li>
+        <li ><a href="#"><i class='fab fa-twitter'></i>&nbsp;&nbsp;afghan warless</a></li>
+        <li ><a href="#"><i class='fab fa-instagram'></i>&nbsp;&nbsp;AFG_WARLESS</a></li>
+        <li ><a href="#"><i class='fab fa-linkedin-in'></i>&nbsp;&nbsp;AFH.warless</a></li>
+        <li ><a href="#"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;farooqzaheer2000@gmail.com</a></li>
+    </ul>
+</footer>
+
+</div>
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+function openSgin(){
+    document.getElementById('sgin').style.display ="block";
+}
+function closeSgin(){
+    document.getElementById('sgin').style.display="none";
+}
+
+    // function for Validate username
+function name_vlidate(){
+    let x = document.getElementById('fullname').value;
+    
+            if (/^[A-Za-z\s]+$/.test(x)) {
+                return true;   
+        }   
+        else {
+            alert('please correct your username!');
+            return false;
+        } 
+    }
+// function for email validation
+    function email_validate(){
+        let x = document.getElementById('email').value;
+        
+                if (/\S+@\S+\.\S+/.test(x)) {
+                    return true;   
+            }   
+            else {
+                alert('your email is incorrect!');
+                return false;
+            } 
+        }
+
+// function for phone validation
+function phone_validate(){
+           let phone = document.getElementById('phone').value;
+           let patt=new RegExp('[93][7][0-9]{8}');
+           if(patt.test(phone)){
+               return true;
+           }
+           else{
+               alert('please correct your phone number!');
+               return false;
+               
+           }
+       }
+    // function for rest form
+    function ask_rest(){
+      if(confirm('are you sure to reset?')){
+        return true;
+      }
+      else{
+        return false;
+      }
+    }
+
+     //    function wellcome
+     function wellcome(){
+        alert("wellcome to Afghan network website. here you can conect and message to us!");
+    }
+
+</script>
+    
+</body>
+</html>
