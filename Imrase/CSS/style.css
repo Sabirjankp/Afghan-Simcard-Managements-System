@@ -190,6 +190,17 @@ footer{
     width: 100%;
     padding-bottom: 20px;
 }
+.container ul li {
+    margin-bottom: 6px;
+}
+h2{
+    margin-bottom: 22px;
+
+}
+.container ul li a:hover{
+    color:rgb(68, 127, 179);
+}
+
 
 .container{
     width: 100%;
@@ -201,7 +212,8 @@ footer{
 
 footer a{
     color: gainsboro;
-    letter-spacing: 0.1rem;
+    font-size: 18px;
+    letter-spacing: 0.05rem;
 }
 
 footer ul{
