@@ -37,36 +37,38 @@
             <h6><i class="fa-solid fa-envelope"></i> &nbsp;&nbsp;farooqzaheer2000@gmail.com</h6>
         </div>
     </div>
-        <div class="box" id="message-inf">
-        <form name="form1">
-            <div class="inputBox">
-                <input type="text" name="" required="">
-                <label>Username</label>
-            </div>
-            <div class="inputBox">
-                <input type="email" name="text1" required="">
-                <label>Email</label>
-            </div>
-            <div class="textBox">
-                <label>message</label>
-                <textarea rows="3"></textarea>
-            </div>
-            <input type="submit" name="" value="Send Message"/> 
-        </form>
-    </div> 
-</div>
 
+        <div class="box" id="message-inf">
+            <form name="form1" onsubmit="return name_vlidate(),emailvalidate()">
+                <div class="inputBox">
+                    <input type="text" name="" required="">
+                    <label>Username</label>
+                </div>
+                <div class="inputBox">
+                    <input type="email" name="text1" required="">
+                    <label>Email</label>
+                </div>
+                <div class="textBox">
+                    <label>message</label>
+                    <textarea rows="3"></textarea>
+                </div>
+                <input type="submit" name="" value="Send Message"/> 
+            </form>
+        </div> 
+    </div>
+
+        <!-- LOGIN button contents -->
 <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
     <div class="column">
         <div class="box">
-            <form name="form1"  onreset="return ask_rest()" onsubmit="name_vlidate(),email_validate(),phone_validate()" >
+            <form name="form1"   onsubmit="return name_vlidate(),emailvalidate(),phone_validate()" >
                 <div class="inputBox">
                     <input type="text" name="text1" id="fullname" required="">
                     <label>FullName</label>
                 </div>
                 <div class="inputBox">
-                    <input type="text name="text1" id="email"  required="">
+                    <input type="text" name="text1" id="email"  required=""/>
                     <label>Email</label>
                 </div>
                 <div class="inputBox">
@@ -90,11 +92,12 @@
     </div>
 </div>
 
+        <!-- SIGN IN buttun contents -->
 <div id="sgin" class="modal">
     <span class="close cursor" onclick="closeSgin()">&times;</span>
       <div class="column">
           <div class="box">
-              <form name="form1" onsubmit="email_validate()">
+              <form name="form1" onsubmit="return emailvalidate()">
                   <div class="inputBox">
                       <input type="text" name="text1" id="email" required="">
                       <label>Email</label>
@@ -150,22 +153,24 @@ function name_vlidate(){
         } 
     }
 // function for email validation
-    function email_validate(){
-        let x = document.getElementById('email').value;
-        
-                if (/\S+@\S+\.\S+/.test(x)) {
-                    return true;   
-            }   
-            else {
-                alert('your email is incorrect!');
-                return false;
-            } 
+function emailvalidate(){
+           var email= document.getElementById('email').value;
+           var firstsplit = email.substring(0,email.lastIndexOf('@'));
+           var lastsplit = email.substring(0,email.lastIndexOf('@')+1);
+
+           if(name.length>3 || last.length>5){
+               return true;
+           }
+           else{
+               alert('incorrect email!');
+               return false;
+           }   
         }
 
 // function for phone validation
 function phone_validate(){
            let phone = document.getElementById('phone').value;
-           let patt=new RegExp('[93][7][0-9]{8}');
+           let patt=new RegExp('[0][7][0-9]{8}');
            if(patt.test(phone)){
                return true;
            }
@@ -185,7 +190,7 @@ function phone_validate(){
       }
     }
 
-     //    function wellcome
+        // function wellcome
      function wellcome(){
         alert("wellcome to Afghan network website. here you can conect and message to us!");
     }
