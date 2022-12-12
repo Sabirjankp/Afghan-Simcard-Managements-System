@@ -1,0 +1,310 @@
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  overflow: hidden;
+}
+header h2{
+    text-align: center;
+    padding-top: 20px;
+    color: black;
+}
+.media-links{
+  position: fixed;
+  display: block;
+  top: 10%;
+  margin-left: -30px;
+}
+.media-links ul li{
+  list-style-type: none;
+  padding-top: 10px;
+  margin-left: -8px;
+}
+.media-links ul a{
+  text-decoration: none;
+  padding: 12px;
+  display: block; 
+  width: 65px;
+  font-size: 30px;
+}
+#fac{
+  padding: 10px;
+  background-color: blue;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+#twi{
+  padding: 10px;
+  background-color:#3498db ;
+  color: #fff; 
+  border-radius: 5px;
+  text-align: center;
+}
+#ins{
+  padding: 10px;
+  background-color:#c108f0 ;
+  color: #fff; 
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+}
+#lin{
+  padding: 10px;
+  background-color:#0066eb ;
+  color: #fff; 
+  border-radius: 5px;
+  text-align: center;
+}
+#plus{
+  padding: 10px;
+  background-color:red;
+  color: #fff; 
+  border-radius: 5px;
+  text-align: center;
+}
+#eml{
+  padding: 10px;
+  background-color:#f08408 ;
+  color: #fff; 
+  border-radius: 5px;
+  text-align: center;
+}
+.row{
+  width: 80%;
+  /* height: 23rem; */
+  position: relative;
+  background-color: rgba(134, 151, 151, 0.781);
+  top: 10px;
+  left: 10%;
+  padding: 12px;
+  display: inline-block;
+}
+#message-inf{
+  width: 50%;
+  float: right;
+  padding-top: 40px;
+}
+.contact-inf{
+  width: 50%;
+  padding: 25px;
+  position: relative;
+  float: left;
+}
+.mail{
+  padding: 20px;
+  line-height: 2px;
+}
+.btns{
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  background-color: rgba(80, 90, 90, 0.781);
+  border-radius: 12px;
+}
+.btns button{
+    background: transparent;
+    background: rgb(255, 175, 3);
+    border: none;
+    color: black;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px; 
+}
+.btns button:hover,
+.btns button:focus
+{
+    background: rgb(247, 150, 4);
+}
+
+.column {
+  position: relative;
+  max-width: 800px;
+  top: 0;
+  left: 4%;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 10%;
+  top: 15%;
+  width: 68%;
+  height: 90%;
+  overflow: hidden;
+  background: rgba(0,0,0,.8);
+  box-shadow: 0 15px 25px rgba(0,0,0,.5);
+  border-radius: 12px;
+}
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+.box h2
+{
+    margin-top: -3rem;
+    color: #fff;
+    text-align: center;
+}
+.box .inputBox
+{
+    position: relative;
+}
+.box .inputBox input
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.box .gender{
+  padding: 10px;
+  line-height: 30px;
+  color: #fff;
+}
+.box .gender[type]{
+  padding: 40px;
+}
+.box .gender label{
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+}
+.box .inputBox label
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label
+{
+    top: -18px;
+    left: 0;
+    color: #03a9f4;
+    font-size:  12px;
+}
+.box input[type="submit"]
+{
+    background: transparent;
+    background: rgb(255, 175, 3);
+    border: none;
+    outline: none;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.box input[type="submit"]:hover{
+  background: rgb(247, 150, 4);
+}
+.textBox textarea{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border: 1px solid #fff;
+    outline: none;
+    background: transparent; 
+}
+.textBox label{
+  color: #fff;
+}
+  .column {
+    position: relative;
+    max-width: 800px;
+    top: 0;
+    left: 4%;
+  }
+  footer{
+    background-color: grey;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin-top: 40px;
+}
+footer ul li,h3{
+  list-style: none;
+  line-height: 20px;
+  padding: 10px;
+  position: relative;
+  left: 25%;
+}
+footer ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+footer ul li i{
+  color: black;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: #0066eb 2px solid;
+  font-size: 20px;
+}
+@media(max-width: 800px){
+  #message-inf{
+    width: 100%;
+    float: left;
+  }
+  .contact-inf{
+    width: 100%;
+    float: left;
+    padding-top: -10px;
+  }
+  .media-links ul a{
+    width: 45px;
+    font-size: 18px;
+  }
+}
+@media(max-width:500px){
+  .row{
+    width: 90%;
+  }
+  .modal{
+    height: 600px;
+  }
+}
+
