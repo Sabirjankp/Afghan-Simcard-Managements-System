@@ -106,7 +106,9 @@ header #logo{
 .h-btn a:hover{
     background-color:rgb(104, 104, 156);
     color: white;
-    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    
 }
 
 .cards{    
@@ -152,7 +154,7 @@ header #logo{
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
-   text-align: justify;
+    text-align: justify;
     margin: 0px 5px;
     padding: 10px 20px;
 }
@@ -175,13 +177,31 @@ header #logo{
     background-color: rgb(3, 158, 39);
 }
 
+#activate:hover{
+    padding-top: 13px;
+    padding-bottom: 13px;
+    transition: 0.4s;
+}
+
 #balance{
     background-color: #093b60;
-    margin-left: 10px; 
+    margin-left: 13px; 
+}
+
+#balance:hover{
+    padding-top: 13px;
+    padding-bottom: 13px;
+    transition: 0.4s;
 }
 
 #deactivate{
     background-color: red ;
+}
+
+#deactivate:hover{
+    padding-top: 13px;
+    padding-bottom: 13px;
+    transition: 0.4s;
 }
 
 footer{

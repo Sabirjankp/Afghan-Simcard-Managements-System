@@ -1,5 +1,5 @@
 // setup end data for countdown (getTime ==Time in mille seconds)
-let lunchDate =new Date("Nov 28, 2022 12:00:00").getTime();
+let lunchDate =new Date("december 29, 2022 12:00:00").getTime();
 
 // Set timer to tick every 1 second
 let timer = setInterval(tick, 1000);
